@@ -5,27 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студия</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!-- шапка сайта -->
-    <header>
-        <nav>
-            <a href="./index.html" class="logo" lang="eu"> <span class="web">Web</span>Studio</a>
+    <header class="header">
+        <nav class="header-navigation">
+            <a href="./index.html" class="header-logo link" lang="eu"> <span class="header-logo-web">Web</span>Studio</a>
             
-            <ul class="list">
-                <li><a href="">Студия</a></li>
-                <li><a href="./portfolio.html">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
+            <ul class="header-list list">
+                <li class="header-item"><a class="header-link link" href="./index.html">Студия</a></li>
+                <li class="header-item"><a class="header-link link" href="./portfolio.html">Портфолио</a></li>
+                <li class="header-item"><a class="header-link link" href="">Контакты</a></li>
             </ul>
         </nav>
 
-        <ul class="list">
-            <li>
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <ul class="header-contacts-list list">
+            <li class="header-contacts-item">
+                <a class="header-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li>
-                <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <li class="header-contacts-item">
+                <a class="header-contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
         </ul>
 
@@ -42,7 +45,7 @@
         <section>
             <!-- <h2>Преимущества компании</h2> -->
             <h2 hidden>Преимущества компании</h2>
-            <ul class="list">
+            <ul>
                 <li>
                     <h3>Внимание к деталям</h3>
                     <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -65,7 +68,7 @@
         <!-- вид деятельности -->
         <section>
             <h2>Чем мы занимаемся</h2>
-            <ul class="list">
+            <ul>
                 <li>
                     <img src="./images/box.jpg" 
                     alt="процесс набора кода на планшете" 
@@ -90,7 +93,7 @@
         <!-- знакомство с командой -->
         <section>
             <h2>Наша команда</h2>
-            <ul class="list">
+            <ul>
                 <li>
                     <img src="./images/img.jpg" 
                     alt="на фото Игорь Демьяненко" 
@@ -131,7 +134,7 @@
         <a href="./index.html" lang="eu"> <span>Web</span>Studio</a>
 
         <address>
-            <ul class="list">
+            <ul>
                 <li><a href=""rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
                 <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
