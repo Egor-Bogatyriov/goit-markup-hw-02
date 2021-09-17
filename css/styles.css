@@ -39,7 +39,6 @@ font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
 color: #FFFFFF
-
 }
 
 .logo-web{
@@ -51,7 +50,7 @@ line-height: 1.19;
 letter-spacing: 0.03em;
 color: #2196F3;
 }
-
+/* --------студия---------- */
 /* шапка сайта */
 .header-link{
     font-weight: 500;
@@ -142,7 +141,7 @@ color: var(--primary-title-color)
 .benefits-title{
 font-weight: bold;
 font-size: 14px;
-line-height: 1.1;
+line-height: 1.2;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--secondaty-title-color);
@@ -199,8 +198,41 @@ color: var(--secondaty-title-color);
 .team-text{
 font-weight: normal;
 font-size: 16px;
-line-height: 19px;
-
+line-height: 1.9;
 letter-spacing: 0.03em;
 color:var(--secondaty-text-color)
+}
+
+/* ----------портфолио---------- */
+.navigation-btn{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.6;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121
+background-color: #F5F4FA
+}
+
+.navigation-btn:hover,
+.navigation-btn:focus{
+    background-color: var(--cursor-text-color);
+    color:#FFFFFF
+}
+
+.examples-tittle{
+font-weight: bold;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--secondaty-title-color);
+}
+
+.examples-text{
+font-weight: normal;
+font-size: 16px;
+line-height: 1.9;
+letter-spacing: 0.03em;
+color: var(--secondaty-text-color);
+
 }
