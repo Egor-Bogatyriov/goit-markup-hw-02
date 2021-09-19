@@ -207,7 +207,7 @@ body {
 
 .filter-btn:hover,
 .filter-btn:focus,
-.current-link {
+.current-btn {
   background-color: var(--cursor-text-color);
   color: var(--primary-white-color);
 }
