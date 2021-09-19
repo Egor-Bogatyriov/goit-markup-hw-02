@@ -4,11 +4,19 @@
   --primary-text-color: #212121;
   --secondaty-text-color: #757575;
   --cursor-text-color: #2196f3;
+  --secondary-logo-color: #000000;
+  --primary-white-color: #ffffff;
+  --footer-background-color: #2f303a;
+  --hero-background-color: #2f303a;
+  --team-background-color: #f5f4fa;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
 }
 
 /* списки и подчеркивания */
@@ -20,53 +28,45 @@ body {
 }
 
 /* лого */
+.logo{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--cursor-text-color);
+}
+
 .logo-header {
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--secondary-logo-color);
 }
 
 .logo-footer {
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-}
+  color:var(--primary-white-color)}
 
-.logo-web {
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #2196f3;
-}
+
 /* --------студия---------- */
 /* шапка сайта */
 .header-link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 
 .header-link:hover,
-.header-link:focus {
+.header-link:focus,
+.current-link {
   color: var(--cursor-text-color);
 }
 
+
 .header-contacts-link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--secondaty-text-color);
 }
 
 .header-contacts-link:hover,
@@ -76,7 +76,7 @@ body {
 
 /* подвал сайта */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--footer-background-color);
 }
 
 .footer-address {
@@ -85,17 +85,13 @@ body {
 
 .footer-address-map-link {
   font-weight: normal;
-  font-size: 14px;
   line-height: 1.72;
-  letter-spacing: 0.03em;
   color: var(--primary-title-color);
 }
 
 .footer-address-link {
   font-weight: normal;
-  font-size: 14px;
   line-height: 1.72;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -111,7 +107,7 @@ body {
 /* главная часть - студия */
 /* section hero */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--hero-background-color);
 }
 
 .hero-item {
@@ -127,18 +123,13 @@ body {
 .hero-btn {
   width: 200px;
   height: 50px;
-  left: 700px;
-  top: 430px;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.89;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--primary-title-color);
@@ -147,9 +138,7 @@ body {
 /* о преимуществах */
 .benefits-title {
   font-weight: bold;
-  font-size: 14px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondaty-title-color);
 }
@@ -168,7 +157,6 @@ body {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--secondaty-title-color);
 }
 
@@ -181,7 +169,7 @@ body {
 
 /* знакомство с командой */
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--team-background-color);
 }
 
 .team-title-primary {
@@ -189,16 +177,12 @@ body {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
 
 .team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
-
-  letter-spacing: 0.03em;
   color: var(--secondaty-title-color);
 }
 
@@ -206,27 +190,27 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.9;
-  letter-spacing: 0.03em;
   color: var(--secondaty-text-color);
 }
 
 /* ----------портфолио---------- */
-.navigation-btn {
-  font-family: "Roboto", sans-serif;
+.filter-btn {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
-  background-color: #f5f4fa;
+  color: var(--primary-text-color);
+  background-color: var(--team-background-color);
   cursor: pointer;
 }
 
-.navigation-btn:hover,
-.navigation-btn:focus {
+.filter-btn:hover,
+.filter-btn:focus,
+.current-link {
   background-color: var(--cursor-text-color);
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 
 .examples-tittle {
@@ -241,6 +225,5 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.9;
-  letter-spacing: 0.03em;
   color: var(--secondaty-text-color);
 }
